@@ -33,7 +33,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(#000000, #494949 );
+    background-image: linear-gradient(#000000ec, #494949dd );
     color: #ffffff;
     border-bottom: 5px solid var(--cor-bordas);
 }
@@ -82,10 +82,42 @@ section{
     text-align: justify;
 }
 
+h2{
+    color: var(--cor-destaque);
+}
+
+h3{
+    color: var(--cor-destaque);
+}
+
 section > ul{
     list-style: none;
 }
 
 section > ul > li > p{
+    color: var(--cor-letras-destaque);
+}
+
+#planos{
+    padding: 10px;
+}
+
+#planos > div{
+    border: 2px solid var(--cor-destaque);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.planoGame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+
+.planoGame > h4{
     color: var(--cor-letras-destaque);
 }
