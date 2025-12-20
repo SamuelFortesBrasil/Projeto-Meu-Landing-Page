@@ -127,4 +127,11 @@ section > ul > li > p{
     body{
         background-attachment: scroll;
     }
+    header > h1{
+        font-size: 4em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
 }
