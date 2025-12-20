@@ -92,6 +92,9 @@ h3{
     color: var(--cor-destaque);
 }
 
+h4{
+    color: var(--cor-letras-destaque);
+}
 section > ul{
     list-style: none;
 }
@@ -132,11 +135,34 @@ section > ul > li > p{
     color: var(--cor-letras-destaque);
 }
 
-.Formulario{
-  
+#Formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px ;
 }
 
-@media  screen and (min-width: 768px) {
+#Formulario > div{
+    margin: 6px;
+}
+
+#Formulario > input{
+    width: 190px;
+}
+
+#enviar{
+    background-color: var(--cor-bordas);
+    margin: auto;
+
+}
+
+#enviar:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-letra);
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 768px) {
     body{
         background-attachment: scroll fixed;
     }

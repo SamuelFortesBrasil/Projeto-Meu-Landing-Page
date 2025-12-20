@@ -74,14 +74,20 @@
         <section>
             <h4>Se increva para receber ofertas ou contratar:</h4>
             <form method="post" id="Formulario">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email">
-                <input type="radio" name="contratar" id="contratar">
-                <label for="contratar"></label>Contratar</label>
-                <input type="radio" name="atualizacoes" id="atualizacoes">
-                <label for="atualizacoes">Receber Novidades</label>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required >
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <input type="radio" name="opcao" id="contratar">
+                    <label for="contratar"></label>Contratar</label>
+                    <input type="radio" name="opcao" id="atualizacoes">
+                    <label for="atualizacoes">Receber Novidades</label>
+                </div>
                 <input type="submit" name="enviar" id="enviar" value="Enviar">     
                 
             </form>
