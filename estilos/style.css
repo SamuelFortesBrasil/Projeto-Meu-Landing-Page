@@ -20,6 +20,7 @@
     --cor-letra : #ffffff;
     --cor-back-dark : #000000;
     --cor-borda-secundaria: #EB1E2C;
+    --tema-light: #494949dd ;
 }
 
 body{
@@ -126,14 +127,14 @@ section > ul > li > p{
     
 }
 
-
-
-
 .planoGame > span > h4{
     font-size: 1.3em;
     color: var(--cor-letras-destaque);
 }
 
+.Formulario{
+  
+}
 
 @media  screen and (min-width: 768px) {
     body{
