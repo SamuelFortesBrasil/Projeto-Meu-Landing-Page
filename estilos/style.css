@@ -110,6 +110,10 @@ section > ul > li > p{
     padding: 10px;
 }
 
+.planoGame > span > h4 > span{
+    color: var(--cor-bordas);
+}
+
 #planos > div{
     border: 3.5px solid var(--cor-destaque);
     box-shadow: inset 0 0 0 3px var(--cor-borda-secundaria);
