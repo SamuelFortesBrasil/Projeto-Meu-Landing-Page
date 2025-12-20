@@ -103,7 +103,10 @@ section > ul > li > p{
     color: var(--cor-letras-destaque);
 }
 
-#planos{
+#planos{  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
     padding: 10px;
 }
 
