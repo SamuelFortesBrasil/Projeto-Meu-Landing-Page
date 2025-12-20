@@ -146,4 +146,14 @@ section > ul > li > p{
     p{
         font-size: 1.2em;
     }
+
+    .planoGame{
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .planoGame > img{
+        width: 32px;
+        height: 32px;
+    }
 }
