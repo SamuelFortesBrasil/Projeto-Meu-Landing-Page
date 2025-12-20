@@ -139,7 +139,7 @@ section > ul > li > p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 10px ;
+    gap: 10px;
 }
 
 #Formulario > div{
@@ -147,7 +147,8 @@ section > ul > li > p{
 }
 
 #Formulario > input{
-    width: 190px;
+    width: 100%;
+    max-width: 300px;
 }
 
 #enviar{
@@ -162,12 +163,12 @@ section > ul > li > p{
     cursor: pointer;
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 480px) {
     body{
         background-attachment: scroll fixed;
     }
     header > h1{
-        font-size: 4em;
+        font-size: 2.8em;
     }
 
     p{
@@ -175,14 +176,19 @@ section > ul > li > p{
     }
 
     .planoGame{
-        font-size: 0.8em;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        font-size: 0.6em;
     }
 
     .planoGame > img{
         display: none;
     }
-    
-    #Formulario > input{
-        width: 90px;
+
+    #Formulario{
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+
 }
