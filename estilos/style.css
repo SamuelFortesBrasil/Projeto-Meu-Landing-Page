@@ -175,11 +175,14 @@ section > ul > li > p{
     }
 
     .planoGame{
-        font-size: 1.2em;
-        padding: 5px;
+        font-size: 0.8em;
     }
 
     .planoGame > img{
         display: none;
+    }
+    
+    #Formulario > input{
+        width: 90px;
     }
 }
