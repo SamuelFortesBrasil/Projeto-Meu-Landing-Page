@@ -49,5 +49,7 @@ form.addEventListener('submit',(e)=>{
         form.reset()
     }
 })
+//Código Finalizado
+//Por questões de apenas não querer eu não fiz uma validação para ver se as senhas eram as mesmas .
 
 
