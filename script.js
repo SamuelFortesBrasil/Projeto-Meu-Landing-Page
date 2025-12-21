@@ -38,7 +38,7 @@ const form = document.getElementById('Formulario')
 form.addEventListener('submit',(e)=>{
         e.preventDefault()
     if(opcoesExtra.style.display === 'flex'){
-        window.open('pageOB.html','_blank')
+        window.location.href = 'pageOB.html'
         form.reset()
     } else{
         alert('Enviaremos nossas Ofertas e Novidades ao Email cadastrado!')
