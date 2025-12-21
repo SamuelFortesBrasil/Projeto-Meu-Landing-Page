@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pela Preferência!</title>
+    <style>
+         @charset "UTF-8";
+
+        @font-face {
+            font-family:'Pixel';
+            src: url('../Pixelify_Sans/PixelifySans-VariableFont_wght.ttf');
+            font-style: normal;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Pixel';
+        }
+
+        :root{
+            --cor-bordas: #65F08A;
+            --cor-destaque: #1FA4EB;
+            --cor-letras-destaque: #EBE51E;
+            --cor-letra : #ffffff;
+            --cor-back-dark : #000000;
+            --tema-light: #494949dd ;
+        }
+
+        body{
+            background-image: url('../images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+
+        section > h1{
+            color: #EBE51E;
+        }
+
+        section{
+            width: 80vw;
+            background-color: var(--cor-back-dark);
+            color: var(--cor-letra);
+            padding: 10px;
+            text-align: justify;
+            border: 5px solid var(--cor-bordas);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Obrigado!</h1>
+            <p>Agradecemos por ter escolhido nossos serviços. Agora confira sua caixa de Email para finalizar sua compra e receber orientações para utilizar sua conta.</p>
+        </section>
+    </main>
+</body>
+</html>

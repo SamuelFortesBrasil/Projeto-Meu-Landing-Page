@@ -29,3 +29,10 @@ divsPlanoGame.forEach((elemento, index) => {
 
 //Aplicação de scroll e ativação das opções de contrato do formulário
 //A partir do click nas divs de planos e preços
+const enviar = document.getElementById('enviar')
+
+if(opcoesExtra.style.display == 'flex'){
+    enviar.addEventListener('click',()=>{
+        window.open('pageOB.html','_blank')
+    })
+}
