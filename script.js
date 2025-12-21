@@ -1,4 +1,4 @@
-//Script para função contratar serviço do formulário
+//Script para funções do formulário
 
 
 const radioContratar = document.getElementById('contratar')
@@ -15,4 +15,17 @@ atualizacao.addEventListener('change',(e)=>{
 //Aparece sessão de contratar no formulário
 
 let divsPlanoGame = [...document.querySelectorAll('div.planoGame')]
-console.log(divsPlanoGame)
+let radioDeOpcoes = [...document.querySelectorAll('input.op')]
+
+divsPlanoGame.forEach((elemento, index) => {
+    elemento.addEventListener('click', () => {
+        radioContratar.checked = true
+        opcoesExtra.style.display = 'flex'
+        radioDeOpcoes[index].checked = true
+
+        document.getElementById('Formulario').scrollIntoView({ behavior: 'smooth' })
+    })
+})
+
+//Aplicação de scroll e ativação das opções de contrato do formulário
+//A partir do click nas divs de planos e preços
