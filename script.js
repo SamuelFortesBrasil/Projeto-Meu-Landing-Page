@@ -13,6 +13,8 @@ radioContratar.addEventListener("change",(e)=>{
 
 atualizacao.addEventListener('change',(e)=>{
     opcoesExtra.style.display = 'none'
+    senha.required = false
+    confsenha.required = false
 })
 //Aparece sessão de contratar no formulário
 let senha = document.getElementById('senha')
@@ -38,9 +40,11 @@ const form = document.getElementById('Formulario')
 form.addEventListener('submit',(e)=>{
         e.preventDefault()
     if(opcoesExtra.style.display === 'flex'){
+        e.preventDefault()
         window.location.href = 'pageOB.html'
         form.reset()
     } else{
+        e.preventDefault()
         alert('Enviaremos nossas Ofertas e Novidades ao Email cadastrado!')
         form.reset()
     }
