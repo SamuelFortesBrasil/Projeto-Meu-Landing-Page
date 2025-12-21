@@ -7,12 +7,16 @@ const opcoesExtra = document.getElementById('contratarOpcao')
 
 radioContratar.addEventListener("change",(e)=>{
     opcoesExtra.style.display = 'flex'
+      senha.required = true
+      confsenha.required = true
 })
 
 atualizacao.addEventListener('change',(e)=>{
     opcoesExtra.style.display = 'none'
 })
 //Aparece sessão de contratar no formulário
+let senha = document.getElementById('senha')
+let confsenha = document.getElementById('confsenha')
 
 let divsPlanoGame = [...document.querySelectorAll('div.planoGame')]
 let radioDeOpcoes = [...document.querySelectorAll('input.op')]
@@ -29,10 +33,17 @@ divsPlanoGame.forEach((elemento, index) => {
 
 //Aplicação de scroll e ativação das opções de contrato do formulário
 //A partir do click nas divs de planos e preços
-const enviar = document.getElementById('enviar')
+const form = document.getElementById('Formulario')
 
-if(opcoesExtra.style.display == 'flex'){
-    enviar.addEventListener('click',()=>{
+form.addEventListener('submit',(e)=>{
+        e.preventDefault()
+    if(opcoesExtra.style.display === 'flex'){
         window.open('pageOB.html','_blank')
-    })
-}
+        form.reset()
+    } else{
+        alert('Enviaremos nossas Ofertas e Novidades ao Email cadastrado!')
+        form.reset()
+    }
+})
+
+
