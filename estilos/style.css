@@ -146,6 +146,7 @@ section > ul > li > p{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
 }
 
@@ -156,6 +157,14 @@ section > ul > li > p{
 #Formulario > input{
     width: 100%;
     max-width: 300px;
+}
+
+#contratarOpcao{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 #enviar{
@@ -190,7 +199,7 @@ section > ul > li > p{
 
     #Formulario{
         flex-direction: column;
-        align-items: flex-start;
+        
     }
 
 

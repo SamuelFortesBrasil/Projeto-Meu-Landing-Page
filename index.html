@@ -37,7 +37,7 @@
         <section id="planos">
             <div class="planoGame" id="plano1">
                 <span>
-                    <h4>Plano Start<span>(Grátis)</span></h4>
+                    <h4>Plano Starter<span>(Grátis)</span></h4>
                     <ul style="list-style: none;">
                         <li>50 jogos;</li>
                         <li>Anúncios no Site;</li>
@@ -48,7 +48,7 @@
             </div>
             <div class="planoGame" id="plano2">
                 <span>
-                    <h4>Plano Start<span>(R$19,90/Anual)</span></h4>
+                    <h4>Plano Normal<span>(R$19,90/Anual)</span></h4>
                     <ul style="list-style: none;">
                         <li>1200 jogos a escolha;</li>
                         <li>Sem Anúncios;</li>
@@ -60,7 +60,7 @@
             </div>
             <div class="planoGame" id="plano3">
                 <span>
-                    <h4>Plano Start<span>(R$28,70/anual)</span></h4>
+                    <h4>Plano Plus<span>(R$28,70/anual)</span></h4>
                     <ul style="list-style: none;">
                         <li>Biblioteca Completa;</li>
                         <li>Sem Anúncios;</li>
@@ -89,8 +89,23 @@
                     <input type="radio" name="opcao" id="atualizacoes">
                     <label for="atualizacoes">Receber Novidades</label>
                 </div>
-                <div id="contratar">
-                    
+                <div id="contratarOpcao">
+                    <label for="senha">Senha*:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="confsenha">Confirmar senha*:</label>
+                    <input type="password" id="confsenha" name="confsenha" required>
+                    <div class=  "selec">
+                        <input type="radio" name="plano" id="starter" class="op">
+                        <label for="plano">Starter</label>
+                    </div>
+                        <div class=  "selec">
+                        <input type="radio" name="plano" id="normal" class="op" checked>
+                        <label for="plano">Normal</label>
+                    </div>
+                        <div class=  "selec">
+                        <input type="radio" name="plano" id="plus" class="op">
+                        <label for="plano">Plus</label>
+                    </div>
                 </div>
                 <input type="submit" name="enviar" id="enviar" value="Enviar">     
                 
@@ -98,8 +113,8 @@
         </section>
     </main>
     <footer>
-        
-    </footer>
 
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

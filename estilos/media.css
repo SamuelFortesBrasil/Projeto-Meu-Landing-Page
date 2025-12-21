@@ -134,6 +134,10 @@
         font-size: 6em;
     }
 
+    h2{
+        font-size: 3em;
+    }
+
     p{
         font-size: 1.6em;
     }
@@ -150,5 +154,10 @@
     #cadastro{
         align-self:  flex-start;
         width: 40vw;
+    }
+
+    #Formulario{
+        align-content: center;
+        align-items: center;
     }
 }
